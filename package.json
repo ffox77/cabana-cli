@@ -1,0 +1,59 @@
+{
+  "name": "cabana-cli",
+  "description": "get out of the sun, change clothes, relax and have a snack while enjoying the view",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ffox77/cabana-cli#readme",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "oclif": {
+    "bin": "cabana-cli"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ffox77/cabana-cli.git"
+  },
+  "scripts": {
+    "start": "./bin/run",
+    "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts",
+  "bin": {
+    "cabana-cli": "./bin/run"
+  },
+  "bugs": {
+    "url": "https://github.com/ffox77/cabana-cli/issues"
+  },
+  "dependencies": {
+    "@mazarine-sea/maz-core": "^0.0.3",
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^3",
+    "cli-ux": "^5.6.3",
+    "dotenv": "^10.0.0",
+    "esm": "^3.2.25",
+    "ethereumjs-util": "^7.1.0",
+    "firebase": "^9.0.2",
+    "inquirer": "^8.1.5",
+    "node-fetch": "^2.6.1",
+    "node-localstorage": "^2.1.6",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@types/node": "^10",
+    "ts-node": "^8",
+    "typescript": "^4.0.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ]
+}
